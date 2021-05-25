@@ -1,15 +1,11 @@
-
 <?php
 require('fpdf/fpdf.php');
-
 class TICKET extends FPDF
 {
 function Code39($xpos, $ypos, $code, $baseline=0.5, $height=5){
-
     $wide = $baseline;
     $narrow = $baseline / 3 ; 
     $gap = $narrow;
- 
     $barChar['0'] = 'nnnwwnwnn';
     $barChar['1'] = 'wnnwnnnnw';
     $barChar['2'] = 'nnwwnnnnw';
@@ -54,11 +50,8 @@ function Code39($xpos, $ypos, $code, $baseline=0.5, $height=5){
     $barChar['/'] = 'nwnwnnnwn';
     $barChar['+'] = 'nwnnnwnwn';
     $barChar['%'] = 'nnnwnwnwn';
-
     $this->SetFont('Arial','',10);
-    //$this->Text($xpos, $ypos + $height + 4, $code);
     $this->SetFillColor(0);
-
     $code = '*'.strtoupper($code).'*';
     for($i=0; $i<strlen($code); $i++){
         $char = $code[$i];
@@ -80,15 +73,11 @@ function Code39($xpos, $ypos, $code, $baseline=0.5, $height=5){
         $xpos += $gap;
     }
 }
-
-
     var $javascript; 
     var $n_js; 
-
     function IncludeJS($script) { 
         $this->javascript=$script; 
     } 
-
     function _putjavascript() { 
         $this->_newobj(); 
         $this->n_js=$this->n; 
@@ -103,25 +92,16 @@ function Code39($xpos, $ypos, $code, $baseline=0.5, $height=5){
         $this->_out('>>'); 
         $this->_out('endobj'); 
     } 
-
     function _putresources() { 
         parent::_putresources(); 
         if (!empty($this->javascript)) { 
             $this->_putjavascript(); 
         } 
     } 
-
     function _putcatalog() { 
         parent::_putcatalog(); 
         if (!empty($this->javascript)) { 
             $this->_out('/Names <</JavaScript '.($this->n_js).' 0 R>>'); 
         } 
     } 
-
-
-
-
-
-
-
 }
