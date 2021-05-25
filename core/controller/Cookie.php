@@ -1,9 +1,6 @@
 <?php
 
 
-// 13 de Octubre del 2014
-// Cookie.php
-// @brief esto es algo mucho mas magico
 
 class Cookie {
 	function __get($value){

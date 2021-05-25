@@ -249,15 +249,7 @@ tr:hover td { background: #d0dafd; color: #339; }
                 }; 
                 ?>
 
-
-
-
     <br />
  
-
-
-    
-    
-
 </page>
 

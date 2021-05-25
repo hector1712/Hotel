@@ -371,40 +371,6 @@ date_default_timezone_set('America/Lima');
 
 
 
-<!-- 
-<script type="text/javascript">
-$(document).ready(function()
-{   
-    $(".monthPicker").datepicker({
-        dateFormat: 'MM yy',
-        changeMonth: true,
-        changeYear: true,
-        showButtonPanel: true,
-
-        onClose: function(dateText, inst) {
-            var month = $("#ui-datepicker-div .ui-datepicker-month :selected").val();
-            var year = $("#ui-datepicker-div .ui-datepicker-year :selected").val();
-            $(this).val($.datepicker.formatDate('MM yy', new Date(year, month, 1)));
-        }
-    });
-
-    $(".monthPicker").focus(function () {
-        $(".ui-datepicker-calendar").hide();
-        $("#ui-datepicker-div").position({
-            my: "center top",
-            at: "center bottom",
-            of: $(this)
-        });
-    });
-});
-</script>
-
-<label for="month">Month: </label>
-<input type="text" id="month" name="month" class="monthPicker" />
-
--->
-
-
        <script src="assets/js/vendor/jquery/jquery-1.11.2.min.js"></script>
         
         <script src="assets/js/vendor/footable/footable.all.min.js"></script>

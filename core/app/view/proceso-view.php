@@ -217,20 +217,6 @@ $(function() {
                               <!-- /.input group -->
                             </div>
 
-
-                           
-                           <!--
-                            <div class="form-group">
-                              <div class="input-group">
-                                <div class="input-group-addon">
-                                   Profesión:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                </div>
-                                <input type="text" class="form-control" name="ocupacion" id="ocupacion"  required placeholder="Ingrese ocupacion" >
-                              </div>
-                              
-                            </div>
-                          -->
-
                              
                             <div class="form-group">
                               <div class="input-group">

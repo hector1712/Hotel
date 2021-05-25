@@ -65,7 +65,10 @@
                     <div class="input-group">
                       <span class="input-group-addon text-green"><i class="fa fa-calendar"></i> AÑO</span>
                       <select class="form-control select2" required  name="anio">   
-                          <option value="2018">2018</option>
+                      <option value="2018">2021</option>
+                      <option value="2018">2020</option>
+                      <option value="2018">2019</option>    
+                      <option value="2018">2018</option>
                           <option value="2017">2017</option>
                           <option value="2016">2016</option>
                           <option value="2015">2015</option>

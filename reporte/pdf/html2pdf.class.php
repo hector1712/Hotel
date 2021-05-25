@@ -5,7 +5,7 @@
  * HTML => PDF convertor
  * distributed under the LGPL License
  *
- * @author  Laurent MINGUET <webmaster@html2pdf.fr>
+ * 
  * @version 4.03
  */
 ini_set("memory_limit","256M");//memoria maxima para cargar el archivo
